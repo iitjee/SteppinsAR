@@ -1,0 +1,90 @@
+ A live direct or indirect view of a physical, real-world environment whose elements are augmented (or supplemented) by
+ computer-generated sensory input such as sound, video, graphics, or GPS data. 
+ 
+ 
+ Now augmented reality has many use cases. I think in the media many times you'll see especially the popular media, expressions
+ of gaming or entertainment, and certainly AR has a lot of use cases in those arenas. It also has a large use case in the world 
+of marketing. Imagine being able to layer advertisements or additional information about products on top of those products 
+wherever you might see them, scavenger hunts, coupon hunts, lots of different things you can do to add virtualness, some sort 
+of augmentedness, to sales.
+
+Healthcare, in terms of allowing healthcare professionals to be able to see information on top of physical things. So for 
+example, maybe when your doctor has an appointment with you instead of looking at your chart to see the basic information that 
+the doctor wants to know, she'll be looking at you through a set of goggles or glasses that will augment the picture of you 
+with information about your health status. 
+  
+So I already mentioned virtual reality. Virtual reality is a related technology to augmented reality. There's also something 
+called mixed reality. Now mixed reality and augmented reality are really almost the same thing. The difference between mixed 
+reality and augmented reality is how are you supposed to feel about the thing that is being projected into your real world 
+view. If that thing is not supposed to be real or have any sort of realness about it, we would refer to that as augmented 
+reality. If the thing that you're projecting you should be treating as if it's real, that's mixed reality.  
+  
+  Now there's also augmented virtual. So an augmented virtual application would be, for example, a completely virtual game that integrates, let's say, with your smartphone and uses the GPS on your smartphone to be able to augment the virtual scene that you're looking at. So that's using something from the real world, some real world information, again like GPS, and augmenting the virtual scene. 
+  
+  And then, of course, there's full virtual reality where you're looking at a completely rendered scene. It's like you're 
+  inside of a movie. You're looking at a virtual scene. Everything around you is virtual. You are represented by some sort of 
+  virtual character, and again virtual reality and augmented reality are quite different
+  
+  
+  Steps for AR
+  Okay, so let's talk about specific steps needed to create an AR experience.
+  1. The first thing you need obviously is a view of reality. 
+  2. then we're going to need a trigger.
+  3. Then we'd have to take that generated content and place it over the scene of reality. 
+  4. And then the last step is to track. The last step is to allow the user to have freedom of movement, to be able to move around, and yet still keep the augmented content in the correct place. 
+  
+  So our first step is to get a view of reality. What are the things that we can use currently to see reality? Well, we can use 
+  our eyes. Our eyes could be the view of reality used for a virtual or mixed reality experience. The most typical view of 
+  reality for augmented reality scenarios today though is your smartphone or potentially a tablet.
+  And another option is, of course, glasses, like the HoloLens.
+  
+  Triggers:
+  a really common trigger is image recognition. You have trained the augmented reality library or SDK or just your code, right, to take a picture of a reality scene and to be able to recognize images within that scene
+  -  Text recognition is another one (WordLens App)
+  -  Pattern Recognition
+  -  Geolocation (Super popular thing)
+  -  Beacons ( so when a user gets to a particular beacon, again like geolocation, beacons are most often mixed with some other 
+   form of trigger or recognition, sort of like the geolocation example where we're not going to bother to start to look for 
+   this particular thing that we want to augment until we get to a particular location. Beacons are sort of known as micro 
+   location. GPS data is sort of known as macro location. So it's sort of a subset of location. )
+  
+  Content Placement:
+  Let's assume that there is a very unique picture frame, and if you look at it with your 
+  ocular device, which again eyes, smartphone, goggles, we want to display famous works of art. So we recognize the specialized 
+  frame in our scene of reality. We have to calculate the coordinates on the optical device, again let's take a cellphone as a 
+  simple example. I hold up my cellphone, my code recognizes the frame, it's going to figure out what the coordinates are, and 
+  then I'm going to draw the content on top of those coordinates. Then I have to keep doing that. And as I said, this is sort 
+  of one of the hardest parts of augmented reality is now that I have added this content to this view of reality, how am I 
+  going to make sure it stays in the correct place? Now oftentimes that means it stays static on top of the view of reality. 
+  
+  So to summarize this module, augmented reality is a way to layer computer-generated content on top of reality. There's a 
+basic flow of augmented reality. We get a view of reality, we get a trigger, we render, and we repeat. That's what an augmented 
+reality application is going to do at a low level.
+  
+  
+  
+  Tools Used:
+  1. Vuforia
+    - Commercial Product (Free for development mode app)
+    - Cross-Platform
+    - Unity Integration with IDE Support ( So creating an AR experience in Unity is, if you know how to use Unity, much easier than creating an AR experience let's say in Android using Java or iOS using Objective-C or Swift, right?)
+    -  Now it has some good image recognition tooling. Some of it is cloud-based. So you can upload images, take those images and then pull them down into your app for purposes of the image recognition. They also do text recognition as well. 
+    
+    (or)
+   1. ARToolKit
+   - Open Source
+   - Cross Platform
+   - Unity Integration there, but vuforia-unity is more easier
+   - Image recognition command-line
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
